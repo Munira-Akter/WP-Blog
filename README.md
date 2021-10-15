@@ -5,11 +5,11 @@ This is a basic WordPress Blog theme Development Project
 #### WordPress Project Setup
 
 <samp>Template file Ready</samp>
-* style.css , index.php , functions.php , screenshot.png
-* page.php , single.php , 404.php
-* sidebar.php , header.php , footer.php
+    * style.css , index.php , functions.php , screenshot.png
+    * page.php , single.php , 404.php
+    * sidebar.php , header.php , footer.php
 
-
+***
 
 <samp>Add Style sheet commetns</samp>
 ```
@@ -26,5 +26,9 @@ This is a basic WordPress Blog theme Development Project
 
 ```
 
+***
+
+
+<samp>Add Style sheet commetns</samp>
 
 
