@@ -44,6 +44,14 @@ function style_script(){
 add_action('wp_enqueue_scripts','style_script');
 
 
+// Register Nav Menu
+register_nav_menus( [
+    'primary_menu' =>'Primary Menu',
+    'footer_menu'  => 'Footer Menu',
+
+]);
+
+
 
 
 ?>
