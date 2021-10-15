@@ -52,6 +52,28 @@ register_nav_menus( [
 ]);
 
 
+// Register Custom Post Type
+register_post_type( 'topic', [
+    'public' => true,
+    'labels' => [
+        'name' => 'Topic',
+        'add_new_item' => 'Add new topic',
+        'add_new' => 'Add new topics',
+        'featured_image' => 'Topic Thumbnail',
+        'all_items'  => 'All Topic'
+    ],
+
+    'menu_icon' => 'dashicons-buddicons-topics',
+    'supports' => ['title','thumbnail','editor']
+]);
+
+
+
+
+
+
+
+
 
 
 ?>
