@@ -1,16 +1,13 @@
-<!doctype html>
-<html <?php language_attributes()?>>
+<!DOCTYPE html>
+<html <?php echo language_attributes(); ?>>
+
 <head>
-    <meta charset="<?php charset() ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-
-    <?php wp_head(  )?>
-
+    <meta charset=" <?php echo bloginfo('charset') ?>">
+    <link rel="icon" href="assets/img/fevicon.png">
+    <?php echo wp_head();  ?>
 </head>
 
-<body <?php body_class(  )?>>
+<body <?php echo body_class()?>>
     <div class="main-wrapper">
         <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div>
@@ -37,8 +34,8 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3 col-12">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="dark-logo" src="assets/images/logo/logo-black.png" alt="Blogar logo">
-                                <img class="light-logo" src="assets/images/logo/logo-white2.png" alt="Blogar logo">
+                                <img class="dark-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-black.png" alt="Blogar logo">
+                                <img class="light-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-white2.png" alt="Blogar logo">
                             </a>
                         </div>
                     </div>
@@ -207,7 +204,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-01.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-01.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -231,7 +228,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-02.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-02.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -255,7 +252,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-03.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -279,7 +276,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -313,7 +310,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -336,7 +333,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-03.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -359,7 +356,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-02.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-02.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -382,7 +379,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -416,7 +413,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -439,7 +436,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-03.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -462,7 +459,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-02.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-02.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -485,7 +482,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -519,7 +516,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-01.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-01.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -542,7 +539,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -566,7 +563,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-03.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-03.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -590,7 +587,7 @@
                                                                     <div class="content-block image-rounded">
                                                                         <div class="post-thumbnail mb--20">
                                                                             <a href="post-details.html">
-                                                                                <img class="w-100" src="assets/images/others/mega-post-04.jpg" alt="Post Images">
+                                                                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/others/mega-post-04.jpg" alt="Post Images">
                                                                             </a>
                                                                         </div>
                                                                         <div class="post-content">
@@ -689,6 +686,8 @@
                         </div>
                     </div>
 
+
+
                     <div class="col-xl-3 col-lg-8 col-md-8 col-sm-9 col-12">
                         <div class="header-search text-right d-flex align-items-center">
                             <form class="header-search-form">
@@ -700,7 +699,7 @@
                             <ul class="metabar-block">
                                 <li class="icon"><a href="#"><i class="fas fa-bookmark"></i></a></li>
                                 <li class="icon"><a href="#"><i class="fas fa-bell"></i></a></li>
-                                <li><a href="#"><img src="assets/images/others/author.png" alt="Author Images"></a></li>
+                                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/others/author.png" alt="Author Images"></a></li>
                             </ul>
                             <!-- Start Hamburger Menu  -->
                             <div class="hamburger-menu d-block d-xl-none">
@@ -722,8 +721,8 @@
                 <div class="mobile-menu-top">
                     <div class="logo">
                         <a href="index.html">
-                            <img class="dark-logo" src="assets/images/logo/logo-black.png" alt="Logo Images">
-                            <img class="light-logo" src="assets/images/logo/logo-white2.png" alt="Logo Images">
+                            <img class="dark-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-black.png" alt="Logo Images">
+                            <img class="light-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-white2.png" alt="Logo Images">
                         </a>
                     </div>
                     <div class="mobile-close">
@@ -798,7 +797,7 @@
                                     <!-- Start Post Thumbnail  -->
                                     <div class="post-thumbnail">
                                         <a href="post-details.html">
-                                            <img src="assets/images/post-images/gallery-post-01.jpg" alt="Post Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/gallery-post-01.jpg" alt="Post Images">
                                         </a>
                                     </div>
                                     <!-- End Post Thumbnail  -->
@@ -819,7 +818,7 @@
                                         <div class="post-meta-wrapper with-button">
                                             <div class="post-meta">
                                                 <div class="post-author-avatar border-rounded">
-                                                    <img src="assets/images/post-images/author/author-image-3.png" alt="Author Images">
+                                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-3.png" alt="Author Images">
                                                 </div>
                                                 <div class="content">
                                                     <h6 class="post-author-name">
@@ -853,132 +852,6 @@
                                     <!-- End Post Content  -->
                                 </div>
                                 <!-- End Single Slide  -->
-
-                                <!-- Start Single Slide  -->
-                                <div class="content-block">
-                                    <!-- Start Post Thumbnail  -->
-                                    <div class="post-thumbnail">
-                                        <a href="post-details.html">
-                                            <img src="assets/images/post-images/gallery-post-03.jpg" alt="Post Images">
-                                        </a>
-                                    </div>
-                                    <!-- End Post Thumbnail  -->
-                                    <!-- Start Post Content  -->
-                                    <div class="post-content">
-                                        <div class="post-cat">
-                                            <div class="post-cat-list">
-                                                <a class="hover-flip-item-wrapper" href="#">
-                                                    <span class="hover-flip-item">
-                                                        <span data-text="CAREERS">CAREERS</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h2 class="title"><a href="post-details.html">These 5 tips will help you nail your next design presentation</a></h2>
-
-                                        <!-- Post Meta  -->
-                                        <div class="post-meta-wrapper with-button">
-                                            <div class="post-meta">
-                                                <div class="post-author-avatar border-rounded">
-                                                    <img src="assets/images/post-images/author/author-image-1.png" alt="Author Images">
-                                                </div>
-                                                <div class="content">
-                                                    <h6 class="post-author-name">
-                                                        <a class="hover-flip-item-wrapper" href="author.html">
-                                                            <span class="hover-flip-item">
-                                                                <span data-text="Syed Tahmim">Syed Tahmim</span>
-                                                            </span>
-                                                        </a>
-
-                                                    </h6>
-                                                    <ul class="post-meta-list">
-                                                        <li>Feb 17, 2019</li>
-                                                        <li>300k Views</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <ul class="social-share-transparent justify-content-end">
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-link"></i></a></li>
-                                            </ul>
-                                            <div class="read-more-button cerchio">
-                                                <a class="axil-button button-rounded hover-flip-item-wrapper" href="post-details.html">
-                                                    <span class="hover-flip-item">
-                                                        <span data-text="Read Post">Read Post</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Post Content  -->
-                                </div>
-                                <!-- End Single Slide  -->
-
-                                <!-- Start Single Slide  -->
-                                <div class="content-block">
-                                    <!-- Start Post Thumbnail  -->
-                                    <div class="post-thumbnail">
-                                        <a href="post-details.html">
-                                            <img src="assets/images/post-images/gallery-post-02.jpg" alt="Post Images">
-                                        </a>
-                                    </div>
-                                    <!-- End Post Thumbnail  -->
-                                    <!-- Start Post Content  -->
-                                    <div class="post-content">
-                                        <div class="post-cat">
-                                            <div class="post-cat-list">
-                                                <a class="hover-flip-item-wrapper" href="#">
-                                                    <span class="hover-flip-item">
-                                                        <span data-text="DESIGN">DESIGN</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h2 class="title"><a href="post-details.html">iPadOS 14 introduces
-                                                new designed specifically for iPad</a></h2>
-
-                                        <!-- Post Meta  -->
-                                        <div class="post-meta-wrapper with-button">
-                                            <div class="post-meta">
-                                                <div class="post-author-avatar border-rounded">
-                                                    <img src="assets/images/post-images/author/author-image-2.png" alt="Author Images">
-                                                </div>
-                                                <div class="content">
-                                                    <h6 class="post-author-name">
-                                                        <a class="hover-flip-item-wrapper" href="author.html">
-                                                            <span class="hover-flip-item">
-                                                                <span data-text="Ismat Jahan">Ismat Jahan</span>
-                                                            </span>
-                                                        </a>
-
-                                                    </h6>
-                                                    <ul class="post-meta-list">
-                                                        <li>Feb 17, 2019</li>
-                                                        <li>300k Views</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <ul class="social-share-transparent justify-content-end">
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-link"></i></a></li>
-                                            </ul>
-                                            <div class="read-more-button cerchio">
-                                                <a class="axil-button button-rounded hover-flip-item-wrapper" href="post-details.html">
-                                                    <span class="hover-flip-item">
-                                                        <span data-text="Read Post">Read Post</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Post Content  -->
-                                </div>
-                                <!-- End Single Slide  -->
-
                             </div>
                         </div>
                     </div>
@@ -1015,7 +888,7 @@
                                         with iOS 14</a></h4>
                                 <div class="post-meta">
                                     <div class="post-author-avatar border-rounded">
-                                        <img src="assets/images/post-images/author/author-image-2.png" alt="Author Images">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-2.png" alt="Author Images">
                                     </div>
                                     <div class="content">
                                         <h6 class="post-author-name">
@@ -1034,7 +907,7 @@
                             </div>
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-images-1.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-images-1.jpg" alt="Post Images">
                                 </a>
                             </div>
                         </div>
@@ -1058,7 +931,7 @@
                                         ugly</a></h4>
                                 <div class="post-meta">
                                     <div class="post-author-avatar border-rounded">
-                                        <img src="assets/images/post-images/author/author-image-1.png" alt="Author Images">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-1.png" alt="Author Images">
                                     </div>
                                     <div class="content">
                                         <h6 class="post-author-name">
@@ -1077,7 +950,7 @@
                             </div>
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-images-2.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-images-2.jpg" alt="Post Images">
                                 </a>
                             </div>
                         </div>
@@ -1097,464 +970,13 @@
                             <div class="axil-banner mb--30">
                                 <div class="thumbnail">
                                     <a href="#">
-                                        <img class="w-100" src="assets/images/add-banner/banner-03.png" alt="Banner Images">
+                                        <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/add-banner/banner-03.png" alt="Banner Images">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-title">
-                                <h2 class="title">Innovation &#38; Tech</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- Start Tab Button  -->
-                            <ul class="axil-tab-button nav nav-tabs mt--20" id="axilTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="tab-one" data-toggle="tab" href="#tabone" role="tab" aria-controls="tab-one" aria-selected="true">Accessibility</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-two" data-toggle="tab" href="#tabtwo" role="tab" aria-controls="tab-two" aria-selected="false">Android Dev </a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-three" data-toggle="tab" href="#tabthree" role="tab" aria-controls="tab-three" aria-selected="false">Blockchain</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="tab-four" data-toggle="tab" href="#tabfour" role="tab" aria-controls="tab-four" aria-selected="false">Gadgets</a>
-                                </li>
-                            </ul>
-                            <!-- End Tab Button  -->
-
-                            <!-- Start Tab Content Wrapper  -->
-                            <div class="tab-content" id="axilTabContent">
-                                <div class="single-tab-content tab-pane fade show active" id="tabone" role="tabpanel" aria-labelledby="tab-one">
-                                    <div class="modern-post-activation slick-layout-wrapper axil-slick-arrow arrow-between-side">
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="ACCESSIBILITY">ACCESSIBILITY</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-04.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="APPLE DESIGN">APPLE DESIGN</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Bold new experience. Same
-                                                            Mac magic.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-05.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="GADGETS">GADGETS</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Creative Game With The New
-                                                            DJI Mavic Air 2</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-06.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="ACCESSIBILITY">ACCESSIBILITY</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-07.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-                                    </div>
-                                </div>
-
-                                <div class="single-tab-content tab-pane fade" id="tabtwo" role="tabpanel" aria-labelledby="tab-two">
-                                    <div class="modern-post-activation slick-layout-wrapper axil-slick-arrow arrow-between-side">
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="APPLE DESIGN">APPLE DESIGN</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Bold new experience. Same
-                                                            Mac magic.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-07.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="CASE STUDY">CASE STUDY</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-06.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="ACCESSIBILITY">ACCESSIBILITY</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-05.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="ACCESSIBILITY">ACCESSIBILITY</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-04.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                    </div>
-                                </div>
-
-                                <div class="single-tab-content tab-pane fade" id="tabthree" role="tabpanel" aria-labelledby="tab-three">
-                                    <div class="modern-post-activation slick-layout-wrapper axil-slick-arrow arrow-between-side">
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="ACCESSIBILITY">ACCESSIBILITY</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-04.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="DESIGN">DESIGN</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Bold new experience.
-                                                            Same Mac magic.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-08.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="DESIGN">DESIGN</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-01.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="DESIGN">DESIGN</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-02.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                    </div>
-                                </div>
-
-                                <div class="single-tab-content tab-pane fade" id="tabfour" role="tabpanel" aria-labelledby="tab-four">
-                                    <div class="modern-post-activation slick-layout-wrapper axil-slick-arrow arrow-between-side">
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="APPLE DESIGN">APPLE DESIGN</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Bold new experience.
-                                                            Same Mac magic.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-03.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="GADGETS">GADGETS</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Creative Game With The New DJI Mavic Air 2</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-02.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="GADGETS">GADGETS</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-01.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-
-                                        <!-- Start Single Post  -->
-                                        <div class="slick-single-layout">
-                                            <div class="content-block modern-post-style text-center content-block-column">
-                                                <div class="post-content">
-                                                    <div class="post-cat">
-                                                        <div class="post-cat-list">
-                                                            <a class="hover-flip-item-wrapper" href="#">
-                                                                <span class="hover-flip-item">
-                                                                    <span data-text="GADGETS">GADGETS</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <h4 class="title"><a href="post-details.html">Lightweight, grippable,
-                                                            and ready to go.</a></h4>
-                                                </div>
-                                                <div class="post-thumbnail">
-                                                    <a href="post-details.html">
-                                                        <img src="assets/images/post-images/post-column-05.jpg" alt="Post Images">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Post  -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Tab Content Wrapper  -->
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -1585,7 +1007,7 @@
                                 <div class="inner">
                                     <a href="#">
                                         <div class="thumbnail">
-                                            <img src="assets/images/post-images/post-sm-01.jpg" alt="post categories images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-sm-01.jpg" alt="post categories images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">Sports &#38; Fitness </h5>
@@ -1600,7 +1022,7 @@
                                 <div class="inner">
                                     <a href="#">
                                         <div class="thumbnail">
-                                            <img src="assets/images/post-images/post-sm-02.jpg" alt="post categories images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-sm-02.jpg" alt="post categories images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">Travel</h5>
@@ -1615,7 +1037,7 @@
                                 <div class="inner">
                                     <a href="#">
                                         <div class="thumbnail">
-                                            <img src="assets/images/post-images/post-sm-03.jpg" alt="post categories images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-sm-03.jpg" alt="post categories images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">lifestyle</h5>
@@ -1630,7 +1052,7 @@
                                 <div class="inner">
                                     <a href="#">
                                         <div class="thumbnail">
-                                            <img src="assets/images/post-images/post-sm-04.jpg" alt="post categories images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-sm-04.jpg" alt="post categories images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">Health</h5>
@@ -1645,7 +1067,7 @@
                                 <div class="inner">
                                     <a href="#">
                                         <div class="thumbnail">
-                                            <img src="assets/images/post-images/post-sm-05.jpg" alt="post categories images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-sm-05.jpg" alt="post categories images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">Animals</h5>
@@ -1660,7 +1082,7 @@
                                 <div class="inner">
                                     <a href="#">
                                         <div class="thumbnail">
-                                            <img src="assets/images/post-images/post-sm-06.jpg" alt="post categories images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-sm-06.jpg" alt="post categories images">
                                         </div>
                                         <div class="content">
                                             <h5 class="title">Food &#38; Drink</h5>
@@ -1757,7 +1179,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-01.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-01.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -1806,7 +1228,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-02.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-02.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -1855,7 +1277,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-03.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-03.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -1903,7 +1325,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-04.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-04.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -1960,7 +1382,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-01.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-01.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2009,7 +1431,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-02.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-02.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2058,7 +1480,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-03.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-03.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2108,7 +1530,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-04.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-04.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2166,7 +1588,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-01.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-01.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2215,7 +1637,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-02.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-02.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2264,7 +1686,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-03.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-03.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2314,7 +1736,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-04.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-04.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2372,7 +1794,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-01.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-01.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2421,7 +1843,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-02.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-02.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2470,7 +1892,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-03.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-03.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2520,7 +1942,7 @@
                                         </div>
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/post-images/trend-post-04.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/trend-post-04.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                     </div>
@@ -2585,7 +2007,7 @@
                                         <div class="content-block post-grid post-grid-large mt--30">
                                             <div class="post-thumbnail">
                                                 <a href="post-details.html">
-                                                    <img src="assets/images/post-images/post-grid-01.jpg" alt="Post Images">
+                                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-01.jpg" alt="Post Images">
                                                 </a>
                                             </div>
                                             <div class="post-grid-content">
@@ -2604,7 +2026,7 @@
                                                     <div class="post-meta-wrapper">
                                                         <div class="post-meta">
                                                             <div class="post-author-avatar border-rounded">
-                                                                <img src="assets/images/post-images/author/author-image-2.png" alt="Author Images">
+                                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-2.png" alt="Author Images">
                                                             </div>
                                                             <div class="content">
                                                                 <h6 class="post-author-name">
@@ -2639,7 +2061,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-07.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-07.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -2666,7 +2088,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-08.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-08.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -2701,7 +2123,7 @@
                                         <div class="content-block post-grid post-grid-large mt--30">
                                             <div class="post-thumbnail">
                                                 <a href="post-details.html">
-                                                    <img src="assets/images/post-images/post-grid-09.jpg" alt="Post Images">
+                                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-09.jpg" alt="Post Images">
                                                 </a>
                                             </div>
                                             <div class="post-grid-content">
@@ -2720,7 +2142,7 @@
                                                     <div class="post-meta-wrapper">
                                                         <div class="post-meta">
                                                             <div class="post-author-avatar border-rounded">
-                                                                <img src="assets/images/post-images/author/author-image-2.png" alt="Author Images">
+                                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-2.png" alt="Author Images">
                                                             </div>
                                                             <div class="content">
                                                                 <h6 class="post-author-name">
@@ -2755,7 +2177,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-02.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-02.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -2782,7 +2204,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-03.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-03.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -2818,7 +2240,7 @@
                                         <div class="content-block post-grid post-grid-large mt--30">
                                             <div class="post-thumbnail">
                                                 <a href="post-details.html">
-                                                    <img src="assets/images/post-images/post-grid-09.jpg" alt="Post Images">
+                                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-09.jpg" alt="Post Images">
                                                 </a>
                                             </div>
                                             <div class="post-grid-content">
@@ -2837,7 +2259,7 @@
                                                     <div class="post-meta-wrapper">
                                                         <div class="post-meta">
                                                             <div class="post-author-avatar border-rounded">
-                                                                <img src="assets/images/post-images/author/author-image-2.png" alt="Author Images">
+                                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-2.png" alt="Author Images">
                                                             </div>
                                                             <div class="content">
                                                                 <h6 class="post-author-name">
@@ -2872,7 +2294,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-07.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-07.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -2899,7 +2321,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-08.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-08.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -2935,7 +2357,7 @@
                                         <div class="content-block post-grid post-grid-large mt--30">
                                             <div class="post-thumbnail">
                                                 <a href="post-details.html">
-                                                    <img src="assets/images/post-images/post-grid-01.jpg" alt="Post Images">
+                                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-01.jpg" alt="Post Images">
                                                 </a>
                                             </div>
                                             <div class="post-grid-content">
@@ -2954,7 +2376,7 @@
                                                     <div class="post-meta-wrapper">
                                                         <div class="post-meta">
                                                             <div class="post-author-avatar border-rounded">
-                                                                <img src="assets/images/post-images/author/author-image-2.png" alt="Author Images">
+                                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/author/author-image-2.png" alt="Author Images">
                                                             </div>
                                                             <div class="content">
                                                                 <h6 class="post-author-name">
@@ -2989,7 +2411,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-02.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-02.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -3016,7 +2438,7 @@
                                                 <div class="content-block post-grid mt--30">
                                                     <div class="post-thumbnail">
                                                         <a href="post-details.html">
-                                                            <img src="assets/images/post-images/post-grid-03.jpg" alt="Post Images">
+                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-grid-03.jpg" alt="Post Images">
                                                         </a>
                                                     </div>
                                                     <div class="post-grid-content">
@@ -3060,7 +2482,7 @@
                         <div class="axil-banner">
                             <div class="thumbnail">
                                 <a href="#">
-                                    <img class="w-100" src="assets/images/add-banner/banner-01.png" alt="Banner Images">
+                                    <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/images/add-banner/banner-01.png" alt="Banner Images">
                                 </a>
                             </div>
                         </div>
@@ -3068,7 +2490,7 @@
                         <div class="content-block post-list-view axil-control is-active mt--30">
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-list-11.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-list-11.jpg" alt="Post Images">
                                 </a>
                             </div>
                             <div class="post-content">
@@ -3114,7 +2536,7 @@
                         <div class="content-block post-list-view axil-control mt--30">
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-list-12.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-list-12.jpg" alt="Post Images">
                                 </a>
                             </div>
                             <div class="post-content">
@@ -3159,7 +2581,7 @@
                         <div class="content-block post-list-view axil-control mt--30">
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-list-15.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-list-15.jpg" alt="Post Images">
                                 </a>
                             </div>
                             <div class="post-content">
@@ -3204,7 +2626,7 @@
                         <div class="content-block post-list-view axil-control mt--30">
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-list-13.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-list-13.jpg" alt="Post Images">
                                 </a>
                             </div>
                             <div class="post-content">
@@ -3249,7 +2671,7 @@
                         <div class="content-block post-list-view axil-control mt--30">
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-list-14.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-list-14.jpg" alt="Post Images">
                                 </a>
                             </div>
                             <div class="post-content">
@@ -3302,7 +2724,7 @@
                                     <li class="cat-item">
                                         <a href="#" class="inner">
                                             <div class="thumbnail">
-                                                <img src="assets/images/post-images/category-image-01.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/category-image-01.jpg" alt="">
                                             </div>
                                             <div class="content">
                                                 <h5 class="title">Tech</h5>
@@ -3312,7 +2734,7 @@
                                     <li class="cat-item">
                                         <a href="#" class="inner">
                                             <div class="thumbnail">
-                                                <img src="assets/images/post-images/category-image-02.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/category-image-02.jpg" alt="">
                                             </div>
                                             <div class="content">
                                                 <h5 class="title">Style</h5>
@@ -3322,7 +2744,7 @@
                                     <li class="cat-item">
                                         <a href="#" class="inner">
                                             <div class="thumbnail">
-                                                <img src="assets/images/post-images/category-image-03.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/category-image-03.jpg" alt="">
                                             </div>
                                             <div class="content">
                                                 <h5 class="title">Travel</h5>
@@ -3332,7 +2754,7 @@
                                     <li class="cat-item">
                                         <a href="#" class="inner">
                                             <div class="thumbnail">
-                                                <img src="assets/images/post-images/category-image-04.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/category-image-04.jpg" alt="">
                                             </div>
                                             <div class="content">
                                                 <h5 class="title">Food</h5>
@@ -3365,7 +2787,7 @@
                                     <div class="content-block post-medium mb--20">
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/small-images/blog-sm-01.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/blog-sm-01.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                         <div class="post-content">
@@ -3385,7 +2807,7 @@
                                     <div class="content-block post-medium mb--20">
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/small-images/blog-sm-02.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/blog-sm-02.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                         <div class="post-content">
@@ -3405,7 +2827,7 @@
                                     <div class="content-block post-medium mb--20">
                                         <div class="post-thumbnail">
                                             <a href="post-details.html">
-                                                <img src="assets/images/small-images/blog-sm-03.jpg" alt="Post Images">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/blog-sm-03.jpg" alt="Post Images">
                                             </a>
                                         </div>
                                         <div class="post-content">
@@ -3449,32 +2871,32 @@
                                 <ul class="instagram-post-list-wrapper">
                                     <li class="instagram-post-list">
                                         <a href="#">
-                                            <img src="assets/images/small-images/instagram-01.jpg" alt="Instagram Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-01.jpg" alt="Instagram Images">
                                         </a>
                                     </li>
                                     <li class="instagram-post-list">
                                         <a href="#">
-                                            <img src="assets/images/small-images/instagram-02.jpg" alt="Instagram Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-02.jpg" alt="Instagram Images">
                                         </a>
                                     </li>
                                     <li class="instagram-post-list">
                                         <a href="#">
-                                            <img src="assets/images/small-images/instagram-03.jpg" alt="Instagram Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-03.jpg" alt="Instagram Images">
                                         </a>
                                     </li>
                                     <li class="instagram-post-list">
                                         <a href="#">
-                                            <img src="assets/images/small-images/instagram-04.jpg" alt="Instagram Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-04.jpg" alt="Instagram Images">
                                         </a>
                                     </li>
                                     <li class="instagram-post-list">
                                         <a href="#">
-                                            <img src="assets/images/small-images/instagram-05.jpg" alt="Instagram Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-05.jpg" alt="Instagram Images">
                                         </a>
                                     </li>
                                     <li class="instagram-post-list">
                                         <a href="#">
-                                            <img src="assets/images/small-images/instagram-06.jpg" alt="Instagram Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-06.jpg" alt="Instagram Images">
                                         </a>
                                     </li>
                                 </ul>
@@ -3509,7 +2931,7 @@
                         <div class="content-block post-default image-rounded mt--30">
                             <div class="post-thumbnail">
                                 <a href="post-details.html">
-                                    <img src="assets/images/post-images/post-dark-01.jpg" alt="Post Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-dark-01.jpg" alt="Post Images">
                                 </a>
                                 <a class="video-popup position-top-center" href="post-details.html"><span
                                         class="play-icon"></span></a>
@@ -3560,7 +2982,7 @@
                                 <div class="content-block post-default image-rounded mt--30">
                                     <div class="post-thumbnail">
                                         <a href="post-details.html">
-                                            <img src="assets/images/post-images/post-dark-04.jpg" alt="Post Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-dark-04.jpg" alt="Post Images">
                                         </a>
                                         <a class="video-popup size-medium position-top-center" href="post-details.html"><span class="play-icon"></span></a>
                                     </div>
@@ -3585,7 +3007,7 @@
                                 <div class="content-block post-default  image-rounded mt--30">
                                     <div class="post-thumbnail">
                                         <a href="post-details.html">
-                                            <img src="assets/images/post-images/post-dark-03.jpg" alt="Post Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-dark-03.jpg" alt="Post Images">
                                         </a>
                                         <a class="video-popup size-medium position-top-center" href="post-details.html"><span class="play-icon"></span></a>
                                     </div>
@@ -3610,7 +3032,7 @@
                                 <div class="content-block post-default image-rounded mt--30">
                                     <div class="post-thumbnail">
                                         <a href="post-details.html">
-                                            <img src="assets/images/post-images/post-dark-04.jpg" alt="Post Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-dark-04.jpg" alt="Post Images">
                                         </a>
                                         <a class="video-popup size-medium position-top-center" href="post-details.html"><span class="play-icon"></span></a>
                                     </div>
@@ -3635,7 +3057,7 @@
                                 <div class="content-block post-default image-rounded mt--30">
                                     <div class="post-thumbnail">
                                         <a href="post-details.html">
-                                            <img src="assets/images/post-images/post-dark-05.jpg" alt="Post Images">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/post-images/post-dark-05.jpg" alt="Post Images">
                                         </a>
                                         <a class="video-popup size-medium position-top-center" href="post-details.html"><span class="play-icon"></span></a>
                                     </div>
@@ -3677,37 +3099,37 @@
                         <ul class="instagram-post-list">
                             <li class="single-post">
                                 <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-01.jpg" alt="Instagram Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-md-01.jpg" alt="Instagram Images">
                                     <span class="instagram-button"><i class="fab fa-instagram"></i></span>
                                 </a>
                             </li>
                             <li class="single-post">
                                 <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-02.jpg" alt="Instagram Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-md-02.jpg" alt="Instagram Images">
                                     <span class="instagram-button"><i class="fab fa-instagram"></i></span>
                                 </a>
                             </li>
                             <li class="single-post">
                                 <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-03.jpg" alt="Instagram Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-md-03.jpg" alt="Instagram Images">
                                     <span class="instagram-button"><i class="fab fa-instagram"></i></span>
                                 </a>
                             </li>
                             <li class="single-post">
                                 <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-04.jpg" alt="Instagram Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-md-04.jpg" alt="Instagram Images">
                                     <span class="instagram-button"><i class="fab fa-instagram"></i></span>
                                 </a>
                             </li>
                             <li class="single-post">
                                 <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-05.jpg" alt="Instagram Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-md-05.jpg" alt="Instagram Images">
                                     <span class="instagram-button"><i class="fab fa-instagram"></i></span>
                                 </a>
                             </li>
                             <li class="single-post">
                                 <a href="#">
-                                    <img src="assets/images/small-images/instagram-md-06.jpg" alt="Instagram Images">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/small-images/instagram-md-06.jpg" alt="Instagram Images">
                                     <span class="instagram-button"><i class="fab fa-instagram"></i></span>
                                 </a>
                             </li>
@@ -3837,8 +3259,8 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img class="dark-logo" src="assets/images/logo/logo-black.png" alt="Logo Images">
-                                    <img class="white-logo" src="assets/images/logo/logo-white2.png" alt="Logo Images">
+                                    <img class="dark-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-black.png" alt="Logo Images">
+                                    <img class="white-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-white2.png" alt="Logo Images">
                                 </a>
                             </div>
                         </div>
@@ -3925,7 +3347,7 @@
 
     </div>
 
-   <?php wp_footer(  )?>
+   <?php echo wp_footer(  )?>
 </body>
 
 

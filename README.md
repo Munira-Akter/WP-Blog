@@ -9,7 +9,7 @@ This is a basic WordPress Blog theme Development Project
     * page.php , single.php , 404.php
     * sidebar.php , header.php , footer.php
 
-***
+
 
 <samp>Add Style sheet commetns</samp>
 ```
@@ -24,7 +24,7 @@ This is a basic WordPress Blog theme Development Project
     Tags: Blog,black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
     Text Domain: WPBlog
 
-```
+
 
 ***
 

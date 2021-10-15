@@ -1,5 +1,6 @@
-(function (window, document, $, undefined) {
-    'use strict';
+(function($){
+   
+    
     var axilInit = {
         i: function (e) {
             axilInit.s();
@@ -400,4 +401,4 @@
     }
     axilInit.i();
 
-})(window, document, jQuery);
+})(jQuery);
