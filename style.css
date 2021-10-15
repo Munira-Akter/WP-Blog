@@ -13423,4 +13423,11 @@ body.active-dark-mode .axil-footer-style-1 .footer-top .inner {
   }
 }
 
+.admin-color-fresh #redux-header, .wp-customizer #redux-header {
+  background: #F1352A !important;
+  border-color: #0073aa;
+  height: 200px !important;
+}
+
+
 

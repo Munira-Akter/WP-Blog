@@ -1,3 +1,5 @@
+
+<?php global $redux ?>
 <!DOCTYPE html>
 <html <?php echo language_attributes(); ?>>
 
@@ -28,13 +30,13 @@
         </div>
 
         <!-- Start Header -->
-        <header class="header axil-header  header-light header-sticky ">
+  <header class="header axil-header  header-light header-sticky ">
             <div class="header-wrap">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3 col-12">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="dark-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-black.png" alt="Blogar logo">
+                                <img width="<?php echo $redux['blog_logo_width']?>.'px'" class="dark-logo" src="<?php echo  $redux['blog_upload_logo']['url'] ?>" alt="Blogar logo">
                                 <img class="light-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-white2.png" alt="Blogar logo">
                             </a>
                         </div>

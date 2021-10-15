@@ -68,6 +68,21 @@ register_post_type( 'topic', [
 ]);
 
 
+// redux framework install
+
+require_once("redux/ReduxCore/framework.php");
+require_once("redux/sample/config.php");
+
+
+// CMB2 framework install
+require_once("cmb2/init.php");
+require_once("cmb2/config.php");
+
+
+
+
+
+
 
 
 
