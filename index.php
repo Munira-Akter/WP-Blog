@@ -1,30 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html <?php language_attributes()?>>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home Default || Blogar - Personal Blog Template</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
+    <meta charset="<?php charset() ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 
-    <!-- CSS
-    ============================================ -->
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/base.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <?php wp_head(  )?>
 
 </head>
 
-<body>
+<body <?php body_class(  )?>>
     <div class="main-wrapper">
         <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div>
@@ -3939,23 +3925,7 @@
 
     </div>
 
-    <!-- JS
-============================================ -->
-    <!-- Modernizer JS -->
-    <script src="assets/js/vendor/modernizr.min.js"></script>
-    <!-- jQuery JS -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/tweenmax.min.js"></script>
-    <script src="assets/js/vendor/js.cookie.js"></script>
-    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
-
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-
+   <?php wp_footer(  )?>
 </body>
 
 
