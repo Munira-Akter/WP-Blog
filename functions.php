@@ -44,6 +44,15 @@ function style_script(){
 add_action('wp_enqueue_scripts','style_script');
 
 
+function admin_scripts(){
+
+    wp_enqueue_script( 'custom', get_template_directory_uri(  ).'/js/custom.js');
+
+}
+
+
+add_action('admin_enqueue_scripts' , 'admin_scripts');
+
 // Register Nav Menu
 register_nav_menus( [
     'primary_menu' =>'Primary Menu',
@@ -104,6 +113,7 @@ class FooterOne extends WP_Widget{
 
     public function widget($x , $y){ 
         $head = $y['ht'];
+        $list = $y['list']
         
         ?>
 
@@ -113,7 +123,7 @@ class FooterOne extends WP_Widget{
         <div class="inner">
             <ul class="ft-menu-list">
                 <li><a href="#"><?php echo $head ?></a></li>
-                <li><a href="#">Conflicts</a></li>
+                <li><a href="#"><?php echo $list?></a></li>
                 <li><a href="#">Terrorism</a></li>
                 <li><a href="#">Disasters</a></li>
                 <li><a href="#">Global Economy</a></li>
@@ -129,7 +139,8 @@ class FooterOne extends WP_Widget{
 
 
     public function form($y){
-        $head = $y['ht'];?>
+        $head = $y['ht'];
+        $list = $y['list']?>
 
         <p>
             <label>Head Title</label>
@@ -137,9 +148,14 @@ class FooterOne extends WP_Widget{
         </p>
 
         <p>
-            <label>List</label>
-            <input class="widefat" type="text" name="<?php echo $this -> get_field_name('')?>">
+            <label>Photo</label>
+            <input class="widefat" type="text" id="blog_cpinput" value="">
         </p>
+
+    <p>
+        <button class="btn btn-primary" id="ccblog_btn" type="button">Add Photo</button>
+        <img id="blog_photo" src="" width="100%">
+    </p>
 
 
 
