@@ -338,6 +338,22 @@
         <!-- Start Tab Area  -->
         <div class="axil-tab-area axil-section-gap bg-color-white">
             <div class="wrapper">
+
+            <?php
+            
+            $topic = new WP_Query([
+                'post_type' => 'topic',
+            ]);
+
+            while($topic -> have_posts()){
+                $topic -> the_post();
+
+              echo get_post_meta(get_the_ID(  ),'sp',true);
+
+            };
+            
+            ?>
+
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -350,6 +366,8 @@
                             </div>
                         </div>
                     </div>
+
+
                    
                 </div>
             </div>
@@ -2514,6 +2532,8 @@
         </div>
         <!-- End Instagram Area  -->
 
+  
+
         <!-- Start Footer Area  -->
         <div class="axil-footer-area axil-footer-style-1 footer-variation-2">
             <div class="footer-mainmenu">
@@ -2521,19 +2541,7 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12">
                             <div class="footer-widget">
-                                <h2 class="title">World</h2>
-                                <div class="inner">
-                                    <ul class="ft-menu-list">
-                                        <li><a href="#">U.N.</a></li>
-                                        <li><a href="#">Conflicts</a></li>
-                                        <li><a href="#">Terrorism</a></li>
-                                        <li><a href="#">Disasters</a></li>
-                                        <li><a href="#">Global Economy</a></li>
-                                        <li><a href="#">Environment</a></li>
-                                        <li><a href="#">Religion</a></li>
-                                        <li><a href="#">Scandals</a></li>
-                                    </ul>
-                                </div>
+                               <?php dynamic_sidebar('footer_one')?>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12">

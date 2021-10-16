@@ -68,6 +68,99 @@ register_post_type( 'topic', [
 ]);
 
 
+// Create Widgets
+
+
+
+add_action( 'widgets_init', 'widget_custom' );
+
+function widget_custom(){
+
+    register_sidebar( [
+        'name' => 'Footer One',
+        'id'   => 'footer_one,'
+    ] );
+
+    register_sidebar( [
+        'name' => 'Footer Two',
+        'id'  => 'footer_two',
+    ] );
+
+    register_widget('FooterOne');
+
+    register_widget('FooterTwo');
+
+};
+
+
+class FooterOne extends WP_Widget{
+
+    public function __construct(){
+        parent::__construct('FooterOne' , 'Quick Link One' , [
+            'description' => 'This widget is for Footer Quick Link'
+        ]);
+    }
+
+
+    public function widget($x , $y){ 
+        $head = $y['ht'];
+        
+        ?>
+
+    <?php echo $x['before_widget'] ?>
+
+    <?php echo $x['before_title'] ?><?php echo $head ?><?php echo $x['after_title'] ?>
+        <div class="inner">
+            <ul class="ft-menu-list">
+                <li><a href="#"><?php echo $head ?></a></li>
+                <li><a href="#">Conflicts</a></li>
+                <li><a href="#">Terrorism</a></li>
+                <li><a href="#">Disasters</a></li>
+                <li><a href="#">Global Economy</a></li>
+                <li><a href="#">Environment</a></li>
+                <li><a href="#">Religion</a></li>
+                <li><a href="#">Scandals</a></li>
+            </ul>
+        </div>
+
+        <?php echo $x['after_widget'] ?>
+
+    <?php }
+
+
+    public function form($y){
+        $head = $y['ht'];?>
+
+        <p>
+            <label>Head Title</label>
+            <input class="widefat" type="editor" name="<?php echo $this -> get_field_name('ht') ?>" value="<?php echo $head?>">
+        </p>
+
+        <p>
+            <label>List</label>
+            <input class="widefat" type="text" name="<?php echo $this -> get_field_name('')?>">
+        </p>
+
+
+
+   <?php }
+
+
+}
+
+
+Class FooterTwo extends WP_Widget{
+
+    public function __construct(){
+        parent::__construct('FooterTwo','Quick Link Two',[
+            'description' => 'This widget is for Footer Quick Link Two'
+        ]);
+    }
+}
+
+
+
+
 // redux framework install
 
 require_once("redux/ReduxCore/framework.php");
